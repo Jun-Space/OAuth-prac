@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OAuth login Practice</title>
+</head>
+<body>
+
+    <div>
+
+        {% if user.is_authenticated %}
+        <p>접속됨,{{ user.username }}</p>
+
+        {% else %}
+        <a href="accounts/login/">로그인페이지</a>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
